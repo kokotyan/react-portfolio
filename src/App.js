@@ -1,10 +1,13 @@
 import "./App.css";
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import 'slick-carousel/slick/slick.js';
 import Header from "./components/Header";
-import Hobby from "./components/Hobby";
 import Overview from "./components/Overview";
 import Skills from "./components/Skills";
 import Works from "./components/Works";
-import NewsSection from "./components/NewsSection";
+import Hobby from "./components/Hobby";
+import NewsSection from "./components/News";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -17,7 +20,7 @@ function App() {
           <Route path="/" element={<Overview />} />
           <Route path="/Skills" element={<Skills />} />
           <Route path="/" element={<Works />} />
-          <Route path="/" element={<Hobby />} />
+          <Route path="/Hobby.jsx" element={<Hobby />} />
           <Route path="/" element={<NewsSection />} />
         </Routes>
       </div>
