@@ -3,6 +3,7 @@ class NewsSection extends React.Component {
   render() {
     const newsItems = [
       { date: '2023/09/08', content: 'skill欄の星表示を文字にして、実際にどこまで出来るかを表示しました。' },
+      { data: '2023/09/06', content: 'ポートフォリオver2をReactで作り始める。'},
       { date: '2023/08/07', content: '作成物の欄を追加しました。' },
       { date: '2023/07/21', content: '文の訂正とhobbyのスライドの速度の低下、使われることのないcontact-usを削除しました。' },
       { date: '2023/06/22', content: 'Googleアナリティクスに対応させました。' },

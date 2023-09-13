@@ -1,3 +1,4 @@
+/*ヘッダー*/
 .App {
   width: 100%;
   height: 100vh;
@@ -10,7 +11,6 @@ header {
   align-items: center;
   background-color: #add8e6;
   color:white;
-  /* position: fixed; */
   width: 100%;
   z-index: 10;
 }
@@ -34,6 +34,35 @@ nav ul li a {
 nav ul li a:hover {
   color: skyblue;
 }
+
+/* スマートフォン用のスタイル（例：幅が600px以下の場合） */
+@media screen and (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  nav ul li:last-child {
+    margin-bottom: 20px;
+  }
+
+  /* ナビゲーション項目のスタイル */
+  nav ul li a {
+    display: block; /* リンクをブロック要素に変更 */
+    padding: 10px 0; /* 上下のスペースを追加 */
+  }
+}
+
+/*ヘッダー*/
 
 .content img {
   width: 100%;
@@ -110,71 +139,50 @@ p {
 
 /*hobby*/
 
-#hobby {
-  padding: 2rem;
-  margin: 50px 0;
-  border: 1px solid #ccc;
+/* カルーセルのコンテナ全体にスタイルを適用 */
+.Carousel {
+  width: 80%; /* カルーセルの幅を調整 */
+  margin: 0 auto; /* カルーセルを中央に配置 */
+  background-color: #f0f0f0; /* カルーセルの背景色を設定 */
+  padding: 20px; /* カルーセルの内側の余白を設定 */
 }
 
-.slick-arrow {
-  z-index: 2;
+/* スライド内の画像にスタイルを適用 */
+.Carousel .slide img {
+  max-width: 100%; /* 画像をスライドに合わせて最大幅に調整 */
+  height: auto; /* アスペクト比を保つために高さを自動調整 */
 }
 
-.slick-prev {
-  left: 0;
+/* スライド内のテキストにスタイルを適用 */
+.Carousel .slide p {
+  text-align: center; /* テキストを中央に配置 */
+  font-size: 18px; /* テキストのフォントサイズを設定 */
+  margin-top: 10px; /* テキストの上部の余白を設定 */
 }
 
-.slick-next {
-  right: 0;
+/*ニュース*/
+
+#news {
+  margin-top: 20px; 
 }
 
-#double-slider {
-  width: 60%;
-  margin: 0 auto;
+#news h2 {
+  font-size: 24px; 
+  margin-bottom: 10px; 
 }
 
-.main-slider {
-  display: flex;
-  width: 60%;
-  margin: 0 auto;
-}
-
-.slider-item {
-  width: 50%;
-  display: inline-block;
-  flex: 1; /* 幅を均等に分割します */
-  margin: 10px 5px;
-  overflow: hidden; /* 画像がはみ出さないようにします */
-  position: relative;
-  padding-top: 60%; /* アスペクト比を保つための余白を設定します */
-}
-
-.main-slider img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-#hobby h2 {
-  line-height: 18rem;
-}
-
-.txt {
-  line-height: 3rem;
-}
-
-.text-slider {
-  width: 80%;
-  margin: 30px auto 0;
-  padding: 30px 0;
+#news dl {
   text-align: center;
-  border-radius: 10px;
-  line-height: 2rem;
+  list-style-type: none; 
+  padding: 0;
 }
 
-.txt h3{
+#news dt {
   text-align: center;
+  font-weight: bold; 
+  margin-top: 10px; 
+}
+
+#news dd {
+  margin-bottom: 20px;
 }

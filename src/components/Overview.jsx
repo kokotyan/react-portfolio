@@ -1,5 +1,5 @@
 import React from 'react';
-import myroomImage from './img/my-room.jpg';
+import myroomImage from './img/6670F46F-3567-422C-BE4A-3A8FD8949C7A_1_105_c.jpeg';
 import zidoriImage from './img/zidori.jpg'; 
 
 function MyComponent() {
@@ -7,12 +7,12 @@ function MyComponent() {
     <main id="overview">
       <div className="list-menu">
         <div className="content">
-          <img src={myroomImage} alt="部屋の机回り" />
+          <img src={myroomImage} alt='' />
         </div>
         <h2>overview</h2>
         <div className="section">
           <figure>
-            <img src={zidoriImage} alt="自撮り" /> 
+            <img src={zidoriImage} alt=''/> 
             <figcaption>2001/02/07 石川県珠洲市にて産声をあげた</figcaption>
           </figure>
           <div>

@@ -19,73 +19,73 @@ function Skills() {
       <div className="container">
         {/* HTML */}
         <li className="skill-item">
-          <img src={Htmlimage} alt="HTML5 Icon" />
+          <img src={Htmlimage} alt='' />
           <p>基本的には不自由なく使いこなせています。</p>
         </li>
 
         {/* CSS */}
         <li className="skill-item">
-          <img src={CssImage} alt="CSS3 Icon" />
+          <img src={CssImage} alt='' />
           <p>レスポンシブ化も出来ます。</p>
         </li>
 
         {/* jQuery */}
         <li className="skill-item">
-          <img src={JqeryImage} alt="jQuery Icon" />
+          <img src={JqeryImage} alt='' />
           <p>プラグインなどを使ってこのサイトを作っています。</p>
         </li>
 
         {/* React */}
         <li className="skill-item">
-          <img src={ReactImage} alt="React Icon" />
+          <img src={ReactImage} alt='' />
           <p>現在ポートフォリオVer2をこれで作っています。</p>
         </li>
 
         {/* Adobe Illustrator */}
         <li className="skill-item">
-          <img src={IllustratorImage} alt="Adobe Illustrator Icon" />
+          <img src={IllustratorImage} alt='' />
           <p>簡単なイラストなら掛けます。</p>
         </li>
 
         {/* Adobe Photoshop */}
         <li className="skill-item">
-          <img src={photshopImage} alt="Adobe Photoshop Icon" />
+          <img src={photshopImage} alt='' />
           <p>そんなに得意ではないが、軽い画像加工なら出来ます。</p>
         </li>
 
         {/* Game Development on Microsoft Windows */}
         <li className="skill-item">
-          <img src={WindowsImage} alt="Microsoft Windows Icon" />
+          <img src={WindowsImage} alt='' />
           <p>自作PCから配信、versionは11のinsiderprogramに参加しています。</p>
         </li>
 
         {/* Apple Beta Version */}
         <li className="skill-item">
-          <img src={AppleImage} alt="Apple Icon" />
+          <img src={AppleImage} alt='' />
           <p>外では基本macなのでコーディングなどはこちらが多め。beta版使ってます。</p>
         </li>
 
         {/* Slack */}
         <li className="skill-item">
-          <img src={SlackImage} alt="Slack Icon" />
+          <img src={SlackImage} alt='' />
           <p>discord感覚で使えますが、botは作ったことはありません。</p>
         </li>
 
         {/* GitHub */}
         <li className="skill-item">
-          <img src={GithubImage} alt="GitHub Icon" />
+          <img src={GithubImage} alt='' />
           <p>これの管理を実際にgitでやってます。</p>
         </li>
 
         {/* Amazon Web Services (AWS) */}
         <li className="skill-item">
-          <img src={Awsimage} alt="AWS Icon" />
+          <img src={Awsimage} alt='' />
           <p>EC2インスタンスは理解できたが、実用には至らなかった。</p>
         </li>
 
         {/* WordPress */}
         <li className="skill-item">
-          <img src={WordpressImage} alt="WordPress Icon" />
+          <img src={WordpressImage} alt='' />
           <p>ブログ運営として１年ほど使いました。</p>
         </li>
       </div>
