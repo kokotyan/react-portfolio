@@ -5,6 +5,7 @@ import Skills from "./components/Skills";
 import Works from "./components/Works";
 import Hobby from "./components/Hobby";
 import News from "./components/News";
+import Footer from "./components/Footer";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -20,6 +21,8 @@ function App() {
           <Route path="/Hobby" element={<Hobby />} />
           <Route path="/News" element={<News />} />
         </Routes>
+
+        <Footer />
       </div>
     </Router>
   );

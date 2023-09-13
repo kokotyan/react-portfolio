@@ -1,14 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Header = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
     <header>
       <div className="logo">
         <h3>koko'sportfolio</h3>
       </div>
 
-      <nav>
+      <nav className={`main-menu ${menuOpen ? "open" : ""}`}>
         <ul>
           <li>
             <Link to="/">overview</Link>
@@ -27,6 +33,12 @@ const Header = () => {
           </li>
         </ul>
       </nav>
+
+      <div className={`menu-toggle ${menuOpen ? "open" : ""}`} onClick={toggleMenu}>
+        <div className="bar"></div>
+        <div className="bar"></div>
+        <div className="bar"></div>
+      </div>
     </header>
   );
 };
