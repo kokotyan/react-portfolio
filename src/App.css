@@ -63,70 +63,6 @@ nav ul li a:hover {
 }
 
 /* メインメニュー */
-.main-menu {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 0;
-  right: -100%;
-  width: 250px;
-  height: 100%;
-  background-color: #333;
-  transition: right 0.3s ease;
-}
-
-.main-menu.open {
-  right: 0;
-}
-
-.main-menu ul {
-  list-style: none;
-  padding: 0;
-}
-
-.main-menu li {
-  padding: 10px;
-  text-align: center;
-}
-
-.main-menu a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 1.2rem;
-}
-
-/* メニュートグルボタン */
-.menu-toggle {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-  padding: 15px;
-  background-color: #333;
-}
-
-.menu-toggle.open {
-  background-color: transparent;
-}
-
-.bar {
-  width: 25px;
-  height: 3px;
-  background-color: #fff;
-  margin: 3px 0;
-  transition: transform 0.3s ease;
-}
-
-.menu-toggle.open .bar:nth-child(1) {
-  transform: translateY(8px) rotate(45deg);
-}
-
-.menu-toggle.open .bar:nth-child(2) {
-  transform: scaleX(0);
-}
-
-.menu-toggle.open .bar:nth-child(3) {
-  transform: translateY(-8px) rotate(-45deg);
-}
 
 /*ヘッダー*/
 
@@ -156,68 +92,73 @@ p {
   text-align: center;
 }
 
-#skills h2 {
-  line-height: 2rem;
-  /* 適切な高さに調整してください */
-}
-
-#skills .container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  max-width: 800px;
-  margin: 0 auto;
-  /* 中央寄せする */
-}
+/* スキルセクションのスタイル */
 
 #skills {
   padding: 2rem;
   margin: 50px auto;
-  /* 上下中央寄せする */
-  border: 1px solid #ccc;
+  max-width: 800px;
+  text-align: center;
+}
+
+/* スキルアイテムのスタイル */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .skill-item {
+  flex: calc(50% - 10px);
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  width: 33.33%;
-  padding: 0 7px;
-  margin-bottom: 20px;
+  text-align: center;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 .skill-item img {
-  height: 80px;
-  /* 適切な大きさに調整してください */
+  height: auto;
   width: 80px;
-  /* 適切な大きさに調整してください */
   max-width: 100%;
-  max-height: 100%;
+  max-height: 80px;
+  margin-bottom: 10px;
 }
 
-@media (max-width: 600px) {
+/* スキルアイテムのテキストスタイル */
+.skill-item p {
+  font-size: 14px; /* 適切なフォントサイズに調整 */
+  line-height: 1.4; /* 行間を調整 */
+  margin: 0;
+}
+
+/* メディアクエリ */
+@media (min-width: 600px) {
   .skill-item {
-    width: 33.33%;
+    flex: calc(50% - 20px);
+    margin: 10px;
   }
 }
 
-/*hobby*/
+/*hobby,works*/
 
 /* カルーセルのコンテナ全体にスタイルを適用 */
 .Carousel {
   width: 80%; /* カルーセルの幅を調整 */
   margin: 0 auto; /* カルーセルを中央に配置 */
-  background-color: #f0f0f0; /* カルーセルの背景色を設定 */
-  padding: 20px; /* カルーセルの内側の余白を設定 */
+  padding: 3rem; /* カルーセルの内側の余白を設定 */
 }
 
 /* スライド内の画像にスタイルを適用 */
 .Carousel .slide img {
-  max-width: 100%; /* 画像をスライドに合わせて最大幅に調整 */
-  height: auto; /* アスペクト比を保つために高さを自動調整 */
+  max-width: 80%; /* 画像をスライドに合わせて最大幅に調整 */
+  max-height: 300px; /* 画像の最大高さを設定（必要に応じて調整） */
 }
+
 
 /* スライド内のテキストにスタイルを適用 */
 .Carousel .slide p {
@@ -252,6 +193,8 @@ p {
 #news dd {
   margin-bottom: 20px;
 }
+
+/*フッター*/
 
 #footer {
   background-color: #add8e6;

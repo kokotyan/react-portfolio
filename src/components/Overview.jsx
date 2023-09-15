@@ -17,7 +17,7 @@ function MyComponent() {
           </figure>
           <div>
             <p>金沢出身。</p>
-            <p>訓練中のwebデザイナーの卵</p>
+            <p>訓練中なエンジニアの卵</p>
             <p>空と音楽、それと美味しいものが好き</p>
           </div>
         </div>

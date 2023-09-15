@@ -4,7 +4,7 @@ import CssImage from './img/css-3.svg';
 import JqeryImage from'./img/jquery.svg';
 import ReactImage from './img/react.svg';
 import IllustratorImage from './img/adobe-illustrator.svg';
-import photshopImage from './img/adobe-photoshop.svg';
+import photoshopImage from './img/adobe-photoshop.svg';
 import WindowsImage from './img/microsoft-windows-icon.svg';
 import AppleImage from './img/apple.svg';
 import SlackImage from './img/slack-icon.svg';
@@ -49,7 +49,7 @@ function Skills() {
 
         {/* Adobe Photoshop */}
         <li className="skill-item">
-          <img src={photshopImage} alt='' />
+          <img src={photoshopImage} alt='' />
           <p>そんなに得意ではないが、軽い画像加工なら出来ます。</p>
         </li>
 

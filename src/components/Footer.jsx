@@ -5,13 +5,13 @@ const Footer = () => {
   return (
     <footer id="footer">
       <div className="wrapper">
-        <p>© 2023 koko's Profile</p>
+        <p>© 2023 koko's Portfolio</p>
       </div>
       <div className="sns">
-        <a href="https://twitter.com/murakumo_yu" target="_blank">
+        <a href="https://twitter.com/murakumo_yu" >
           <FontAwesomeIcon icon={faTwitter} />
         </a>
-        <a href="https://github.com/kokotyan" target="_blank">
+        <a href="https://github.com/kokotyan" >
           <FontAwesomeIcon icon={faGithub} />
         </a>
       </div>
