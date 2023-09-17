@@ -68,6 +68,7 @@ nav ul li a:hover {
 
 .content img {
   width: 100%;
+  max-width: 100%;
   height: 320px;
   object-fit:cover ;
 }
@@ -80,16 +81,14 @@ figure img {
   border-radius: 50%;
 }
 
-h2 {
+h2,figcaption,p {
   text-align: center;
 }
 
-figcaption {
-  text-align: center;
-}
-
-p {
-  text-align: center;
+@media (max-width: 600px) {
+  .content img {
+    height: auto;
+  }
 }
 
 /* スキルセクションのスタイル */
@@ -146,26 +145,55 @@ p {
 
 /*hobby,works*/
 
-/* カルーセルのコンテナ全体にスタイルを適用 */
-.Carousel {
-  width: 80%; /* カルーセルの幅を調整 */
+/* Slide Component CSS with Media Queries */
+
+/* Carousel Container */
+.react-responsive-carousel {
+  max-width: 800px; /* カルーセルの最大幅を設定 */
   margin: 0 auto; /* カルーセルを中央に配置 */
-  padding: 3rem; /* カルーセルの内側の余白を設定 */
 }
 
-/* スライド内の画像にスタイルを適用 */
-.Carousel .slide img {
-  max-width: 80%; /* 画像をスライドに合わせて最大幅に調整 */
-  max-height: 300px; /* 画像の最大高さを設定（必要に応じて調整） */
+/* Individual Slide */
+.react-responsive-carousel .carousel .slide {
+  background-color: #f5f5f5; /* スライドの背景色を設定 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
 }
 
-
-/* スライド内のテキストにスタイルを適用 */
-.Carousel .slide p {
-  text-align: center; /* テキストを中央に配置 */
-  font-size: 18px; /* テキストのフォントサイズを設定 */
-  margin-top: 10px; /* テキストの上部の余白を設定 */
+/* Slide Image */
+.react-responsive-carousel .carousel .slide img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px; /* 画像に角丸を適用 */
 }
+
+/* Slide Text */
+.react-responsive-carousel .carousel .slide p {
+  font-size: 16px;
+  margin-top: 10px;
+  text-align: center;
+  color: #333; /* テキストのカラーを設定 */
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 600px) {
+  /* Adjust styles for smaller screens here */
+  .react-responsive-carousel {
+    max-width: 100%; /* カルーセルを画面幅に合わせる */
+  }
+
+  .react-responsive-carousel .carousel .slide {
+    padding: 10px; /* スライドのパディングを調整 */
+  }
+
+  .react-responsive-carousel .carousel .slide p {
+    font-size: 14px; /* テキストのフォントサイズを小さくする */
+  }
+}
+
 
 /*ニュース*/
 
@@ -200,8 +228,15 @@ p {
   background-color: #add8e6;
   color: #fff;
   padding: 20px 0;
+  position: fixed;
   text-align: center;
+  bottom: 0;
   width: 100%;
+  z-index: 100;
+}
+
+.content {
+  margin-bottom: 100px;
 }
 
 .wrapper {
@@ -210,11 +245,24 @@ p {
 
 .sns {
   font-size: 24px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px 0;
+  border-radius: 10px;
+}
+
+/* p要素にマージンを追加 */
+#footer p {
+  margin-bottom: 3rem; /* マージンを追加 */
 }
 
 .sns a {
   color: #fff;
-  margin: 0 10px;
   text-decoration: none;
   transition: all 0.3s;
 }
@@ -223,6 +271,10 @@ p {
   color: #55acee;
 }
 
-.sns i {
-  padding: 0 5px;
+@media (max-width: 768px) {
+  .sns {
+    font-size: 18px;
+    bottom: 10px;
+    padding: 5px 0;
+  }
 }
