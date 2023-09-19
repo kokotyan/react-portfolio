@@ -1,30 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
-  const [showFooter, setShowFooter] = useState(false);
-
-  useEffect(() => {
-    // スクロールイベントを監視してフッターの表示/非表示を制御
-    const handleScroll = () => {
-      const pageHeight = document.documentElement.scrollHeight;
-      const viewportHeight = window.innerHeight;
-      const isAtBottom = window.scrollY + viewportHeight >= pageHeight;
-
-      setShowFooter(isAtBottom);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    // コンポーネントがアンマウントされるときにイベントリスナーを削除
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
   return (
-    <footer id="footer" style={{ display: showFooter ? 'block' : 'none' }}>
+    <footer id="footer" className="footer">
       <div className="wrapper">
         <p>© 2023 koko's Portfolio</p>
       </div>

@@ -86,6 +86,10 @@ nav ul li a:hover {
   width: 30px; /* アイコンの幅 */
   height: 20px; /* アイコンの高さ */
   padding: 5px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 10;
 }
 
 .bar {
@@ -156,6 +160,47 @@ nav ul li a:hover {
   transform: translateX(0);
 }
 
+/* 通常のメニュー */
+@media screen and (min-width: 600px) {
+  .main-menu {
+    position: static; /* メニューの固定位置を解除 */
+    background-color: transparent; /* 背景を透明にする */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    transform: none; /* 既存のトランスフォームを解除 */
+  }
+
+  .main-menu ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .main-menu ul li {
+    margin: 0;
+  }
+
+  .main-menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px; /* メニューの文字サイズを調整 */
+    padding: 10px 20px; /* メニュー項目の余白を調整 */
+    border-radius: 5px; /* メニュー項目に角丸を追加 */
+    background-color: transparent; /* 背景色を透明にする */
+    transition: background-color 0.3s ease;
+  }
+
+  .main-menu ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* メニュー項目のホバー時の背景色を設定 */
+  }
+
+  .menu-toggle {
+    display: none; /* 画面幅が大きい場合はメニュートグルアイコンを非表示にする */
+  }
+}
 
 /* メニュートグルアイコンのスタイル */
 
@@ -348,28 +393,45 @@ h2,figcaption,p {
 }
 
 /* p要素にマージンを追加 */
-#footer p {
-  margin-bottom: 3rem;
+
+.footer {
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.footer .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.sns {
+  display: flex;
 }
 
 .sns a {
   color: #fff;
   text-decoration: none;
-  transition: all 0.3s;
+  font-size: 24px;
+  transition: color 0.3s;
+  margin-bottom: -1.5rem; /* リンク間のマージン */
 }
 
 .sns a:hover {
   color: #55acee;
 }
 
+/* メディアクエリを使用してレスポンシブにする */
 @media (max-width: 768px) {
-  .sns {
-    font-size: 18px;
-    bottom: 10px;
-    padding: 5px 0;
+  .footer .wrapper {
+    padding: 0 20px; /* スマートフォン用に内側のパディングを追加 */
+  }
+
+  .sns a {
+    margin: -1rem 0; /* スマートフォン用にリンク間のマージンを調整 */
   }
 }
-
-
-
 
