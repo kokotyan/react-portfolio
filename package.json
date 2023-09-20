@@ -24,8 +24,9 @@
     "eject": "react-scripts eject",
     "rm": "rm -rf docs",
     "mv": "mv build docs",
+    "predeploy": "npm run build",
     "git": "git add . && git commit && git push origin master",
-    "deploy": "npm run rm && npm run build && npm run mv && npm run git"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -46,7 +47,8 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^6.0.0",
     "react-scripts": "^5.0.1"
   },
-  "homepage": "https://<kokotyan>.github.io/<react-portfolio>/"
-}
+    "homepage": "https://kokotyan.github.io/react-portfolio"
+  }
