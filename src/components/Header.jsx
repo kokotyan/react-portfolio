@@ -39,7 +39,7 @@ const Header = () => {
         </ul>
       </nav>
 
-      {/* ハンバーガーメニューのトグル */}
+      {/*トグル */}
       <div className={`menu-toggle ${menuOpen ? "open" : ""}`} onClick={toggleMenu}>
         <div className="bar"></div>
         <div className="bar"></div>
