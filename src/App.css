@@ -285,15 +285,33 @@ h2,figcaption,p {
 
 /*hobby,works*/
 
-/* Carousel Container */
+.carousel .slide img {
+  max-width:75%; 
+  height: auto;
+}
+
+.carousel .slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px; 
+}
+
+.carousel .carousel-slider {
+  max-width: 50%; /* クリックで画像が切り替わる部分の最大幅を設定 */
+  margin: 0 auto; /* 中央に配置 */
+}
+
+/* 以下、その他のスタイルルールは変更しないでください */
 .react-responsive-carousel {
-  max-width: 800px; /* カルーセルの最大幅を設定 */
-  margin: 0 auto; /* カルーセルを中央に配置 */
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 /* Individual Slide */
 .react-responsive-carousel .carousel .slide {
-  background-color: #f5f5f5; /* スライドの背景色を設定 */
+  background-color: #f5f5f5;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -301,34 +319,26 @@ h2,figcaption,p {
   padding: 20px;
 }
 
-/* Slide Image */
-.react-responsive-carousel .carousel .slide img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 5px; /* 画像に角丸を適用 */
-}
-
 /* Slide Text */
 .react-responsive-carousel .carousel .slide p {
   font-size: 16px;
   margin-top: 10px;
   text-align: center;
-  color: #333; /* テキストのカラーを設定 */
+  color: #333;
 }
 
 /* Media Query for Smaller Screens */
 @media (max-width: 600px) {
-  /* Adjust styles for smaller screens here */
   .react-responsive-carousel {
-    max-width: 100%; /* カルーセルを画面幅に合わせる */
+    max-width: 100%;
   }
 
   .react-responsive-carousel .carousel .slide {
-    padding: 10px; /* スライドのパディングを調整 */
+    padding: 10px;
   }
 
   .react-responsive-carousel .carousel .slide p {
-    font-size: 14px; /* テキストのフォントサイズを小さくする */
+    font-size: 14px;
   }
 }
 
@@ -381,14 +391,14 @@ h2,figcaption,p {
 
 .sns {
   font-size: 24px;
-  position: fixed;
+  position: relative;
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
   justify-content: center;
   gap: 20px;
-  padding: 5px 0;
+  padding: 15px 0;
   border-radius: 10px;
 }
 
@@ -424,7 +434,6 @@ h2,figcaption,p {
   color: #55acee;
 }
 
-/* メディアクエリを使用してレスポンシブにする */
 @media (max-width: 768px) {
   .footer .wrapper {
     padding: 0 20px; /* スマートフォン用に内側のパディングを追加 */

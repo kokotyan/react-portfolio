@@ -1,7 +1,7 @@
 import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import GadgetImage from './img/gadget.jpg';
+import GadgetImage from './img/gadgetpt2.jpeg';
 import GameImage from './img/game.jpg';
 import SoraImage from './img/photo.jpg';
 
