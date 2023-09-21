@@ -6,7 +6,7 @@ import Works from "./components/Works";
 import Hobby from "./components/Hobby";
 import News from "./components/News";
 import Footer from "./components/Footer";
-import { HashRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route,Routes,} from "react-router-dom";
 
 function App() {
   return (
