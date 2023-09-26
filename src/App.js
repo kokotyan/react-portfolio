@@ -6,25 +6,25 @@ import Works from "./components/Works";
 import Hobby from "./components/Hobby";
 import News from "./components/News";
 import Footer from "./components/Footer";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <Router basename="/react-portfolio"> 
+    <HashRouter>
       <div className="App">
         <Header />
 
         <Routes>
-          <Route path="/" element={<Overview />} />
-          <Route path="/Skills" element={<Skills />} />
-          <Route path="/Works" element={<Works />} />
-          <Route path="/Hobby" element={<Hobby />} />
-          <Route path="/News" element={<News />} />
+          <Route path="/react-portfolio/Overview" element={<Overview />} />
+          <Route path="/react-portfolio/Skills" element={<Skills />} />
+          <Route path="/react-portfolio/Works" element={<Works />} />
+          <Route path="/react-portfolio/Hobby" element={<Hobby />} />
+          <Route path="/react-portfolio/News" element={<News />} />
         </Routes>
 
         <Footer />
       </div>
-    </Router>
+    </HashRouter>
   );
 }
 

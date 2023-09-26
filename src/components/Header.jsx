@@ -22,19 +22,19 @@ const Header = () => {
       <nav className={`main-menu ${menuOpen ? "open" : ""}`}>
         <ul>
           <li>
-            <Link to="/" onClick={closeMenu}>overview</Link>
+            <Link to="/react-portfolio/Overview" onClick={closeMenu}>overview</Link>
           </li>
           <li>
-            <Link to="/Skills" onClick={closeMenu}>skills</Link>
+            <Link to="/react-portfolio/Skills" onClick={closeMenu}>skills</Link>
           </li>
           <li>
-            <Link to="/Works" onClick={closeMenu}>Works</Link>
+            <Link to="/react-portfolio/Works" onClick={closeMenu}>Works</Link>
           </li>
           <li>
-            <Link to="/Hobby" onClick={closeMenu}>Hobby</Link>
+            <Link to="/react-portfolio/Hobby" onClick={closeMenu}>Hobby</Link>
           </li>
           <li>
-            <Link to="/News" onClick={closeMenu}>news</Link>
+            <Link to="/react-portfolio/News" onClick={closeMenu}>news</Link>
           </li>
         </ul>
       </nav>

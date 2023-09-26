@@ -2,7 +2,7 @@ import React from 'react';
 class NewsSection extends React.Component {
   render() {
     const newsItems = [
-      { date: '2023/0/20', content: 'GitHubPagesにこのサイトを上げました!'},
+      { date: '2023/09/26', content: 'GitHubPagesにこのサイトを上げました!'},
       { date: '2023/09/19', content: 'ポートフォリオver2にもハンバーガーメニューを作りました'},
       { date: '2023/09/08', content: 'skill欄の星表示を文字にして、実際にどこまで出来るかを表示しました。' },
       { date: '2023/09/06', content: 'ポートフォリオver2をReactで作り始める。'},
