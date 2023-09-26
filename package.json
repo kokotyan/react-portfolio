@@ -49,6 +49,5 @@
   "devDependencies": {
     "gh-pages": "^6.0.0",
     "react-scripts": "^5.0.1"
-  },
-  "homepage": "https://kokotyan.github.io/react-portfolio"
+  }
 }
