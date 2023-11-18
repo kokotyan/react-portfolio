@@ -11,6 +11,12 @@ import SlackImage from './img/slack-icon.svg';
 import GithubImage from './img/github-icon.svg';
 import Awsimage from './img/aws.svg';
 import WordpressImage from './img/wordpress-icon-alt.svg';
+import NodeImage from './img/node-js-icon-454x512-nztofx17.png';
+import VueImage from './img/Vue2.png';
+import PythonImage from './img/python.png';
+import PHPImage from './img/PHP.png';
+import NuxtImage from './img/nuxt.png';
+import TsImage from './img/ts.png'
 
 function Skills() {
   return (
@@ -39,6 +45,18 @@ function Skills() {
         <li className="skill-item">
           <img src={ReactImage} alt='' />
           <p>現在ポートフォリオVer2をこれで作っています。</p>
+        </li>
+
+        {/*node.js*/}
+        <li className="skill-item">
+          <img src={NodeImage} alt="" />
+          <p>progateを修了する程度には出来ます。</p>
+        </li>
+
+        {/*vue.js */}
+        <li className="skill-item">
+          <img src={VueImage} alt="" />
+          <p>簡単なメモ帳アプリが作れます。</p>
         </li>
 
         {/* Adobe Illustrator */}
@@ -89,6 +107,32 @@ function Skills() {
           <p>ブログ運営として１年ほど使いました。</p>
         </li>
       </div>
+      <h2>I'm studying now</h2>
+
+      {/*python */}
+      <li className="skill-item">
+          <img src={PythonImage} alt="" />
+          <p>11月に入ってから機械学習に興味をもち学習を始めた。最近はpandasやseabornについて触れている。</p>
+        </li>
+
+        {/*PHP */}
+        <li className="skill-item">
+          <img src={PHPImage} alt="" />
+          <p>この言語はwordpressで開発を進めるのにあたって触る事になった。udemyで講座受けている。</p>
+        </li>
+
+        {/*Nuxt.js */}
+        <li className="skill-item">
+          <img src={NuxtImage} alt="" />
+          <p>モダンな開発がしたいと思ってkindleで書籍を買ってぼちぼち学んでいる。</p>
+        </li>
+
+        {/*typescript */}
+        <li className="skill-item">
+          <img src={TsImage} alt="" />
+          <p>これもモダンな開発に必要だと感じkindleで書籍を買い学習中。</p>
+        </li>
+        
     </section>
   );
 }
