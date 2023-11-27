@@ -16,7 +16,8 @@ import VueImage from './img/Vue2.png';
 import PythonImage from './img/python.png';
 import PHPImage from './img/PHP.png';
 import NuxtImage from './img/nuxt.png';
-import TsImage from './img/ts.png'
+import TsImage from './img/ts.png';
+import LinuxImage from './img/ubuntu.png'
 
 function Skills() {
   return (
@@ -107,7 +108,7 @@ function Skills() {
           <p>ブログ運営として１年ほど使いました。</p>
         </li>
       </div>
-      <h2>I'm studying now</h2>
+      <h3>I'm studying now</h3>
 
       {/*python */}
       <li className="skill-item">
@@ -131,6 +132,12 @@ function Skills() {
         <li className="skill-item">
           <img src={TsImage} alt="" />
           <p>これもモダンな開発に必要だと感じkindleで書籍を買い学習中。</p>
+        </li>
+
+        {/*linux */}
+        <li className="skill-item">
+          <img src={LinuxImage} alt="" />
+          <p>11月の中頃からパソコンの中に入れてみたもの、linucを取るために奮闘中</p>
         </li>
         
     </section>
