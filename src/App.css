@@ -21,6 +21,8 @@ header .logo h3 {
   font-size: 27px;
 }
 
+
+
 nav ul {
   padding: 0;
   margin: 0;
@@ -219,10 +221,17 @@ figure img {
   margin: auto;
   display: block;
   border-radius: 50%;
+  position: relative;bottom: 4rem;
 }
 
-h2,figcaption,p {
+  h2,figcaption {
   text-align: center;
+  position: relative;bottom: 3.5rem;
+}
+
+.text {
+  text-align: center;
+  position: relative;bottom: 3.5rem;
 }
 
 @media (max-width: 600px) {

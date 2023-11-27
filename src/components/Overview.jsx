@@ -15,9 +15,9 @@ function MyComponent() {
             <img src={zidoriImage} alt=''/> 
             <figcaption>2001/02/07 石川県珠洲市にて産声をあげた</figcaption>
           </figure>
-          <div>
+          <div className='text'>
             <p>金沢出身。</p>
-            <p>訓練中なエンジニアの卵</p>
+            <p>現場でバイトをしているエンジニアの卵</p>
             <p>空と音楽、それと美味しいものが好き</p>
           </div>
         </div>
