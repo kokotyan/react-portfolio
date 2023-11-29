@@ -1,0 +1,4 @@
+hagf.buzz
+
+- name: add CNAME
+  run: cp ./path/to/CNAME ./out/
