@@ -134,7 +134,7 @@ function Skills() {
           <p>これもモダンな開発に必要だと感じkindleで書籍を買い学習中。</p>
         </li>
 
-        {/*linux */}
+        {/*linux！ */}
         <li className="skill-item">
           <img src={LinuxImage} alt="" />
           <p>11月の中頃からパソコンの中に入れてみたもの、linucを取るために奮闘中</p>
