@@ -14,7 +14,6 @@ import WordpressImage from './img/wordpress-icon-alt.svg';
 import NodeImage from './img/node-js-icon-454x512-nztofx17.png';
 import VueImage from './img/Vue2.png';
 import PythonImage from './img/python.png';
-import PHPImage from './img/PHP.png';
 import NuxtImage from './img/nuxt.png';
 import TsImage from './img/ts.png';
 import LinuxImage from './img/ubuntu.png'
@@ -33,19 +32,19 @@ function Skills() {
         {/* CSS */}
         <li className="skill-item">
           <img src={CssImage} alt='' />
-          <p>レスポンシブ化も出来ます。</p>
+          <p>レスポンシブなサイトが作れます。</p>
         </li>
 
         {/* jQuery */}
         <li className="skill-item">
           <img src={JqeryImage} alt='' />
-          <p>プラグインなどを使ってこのサイトを作っています。</p>
+          <p>slickなどを使ってver1のポートフォリオを作りました。</p>
         </li>
 
         {/* React */}
         <li className="skill-item">
           <img src={ReactImage} alt='' />
-          <p>現在ポートフォリオVer2をこれで作っています。</p>
+          <p>現在のポートフォリオはこれで作られています。</p>
         </li>
 
         {/*node.js*/}
@@ -63,63 +62,57 @@ function Skills() {
         {/* Adobe Illustrator */}
         <li className="skill-item">
           <img src={IllustratorImage} alt='' />
-          <p>簡単なイラストなら掛けます。</p>
+          <p>簡単なイラストなら描けます。</p>
         </li>
 
         {/* Adobe Photoshop */}
         <li className="skill-item">
           <img src={photoshopImage} alt='' />
-          <p>そんなに得意ではないが、軽い画像加工なら出来ます。</p>
+          <p>軽い画像加工なら出来ます。</p>
         </li>
 
         {/* Game Development on Microsoft Windows */}
         <li className="skill-item">
           <img src={WindowsImage} alt='' />
-          <p>自作PCから配信、versionは11のinsiderprogramに参加しています。</p>
+          <p>自作PC組めます、win11のbeta版を使ってます</p>
         </li>
 
         {/* Apple Beta Version */}
         <li className="skill-item">
           <img src={AppleImage} alt='' />
-          <p>外では基本macなのでコーディングなどはこちらが多め。beta版使ってます。</p>
+          <p>基本macで作業してます、ちなみにbeta版使ってます。</p>
         </li>
 
         {/* Slack */}
         <li className="skill-item">
           <img src={SlackImage} alt='' />
-          <p>discord感覚で使えますが、botは作ったことはありません。</p>
+          <p>基本業務連絡はslack、botは作ったことはありません。</p>
         </li>
 
         {/* GitHub */}
         <li className="skill-item">
           <img src={GithubImage} alt='' />
-          <p>これの管理を実際にgitでやってます。</p>
-        </li>
-
-        {/* Amazon Web Services (AWS) */}
-        <li className="skill-item">
-          <img src={Awsimage} alt='' />
-          <p>EC2インスタンスは理解できたが、実用には至らなかった。</p>
+          <p>コードの管理はgitでやってます。</p>
         </li>
 
         {/* WordPress */}
         <li className="skill-item">
           <img src={WordpressImage} alt='' />
-          <p>ブログ運営として１年ほど使いました。</p>
+          <p>ブログ運営したりバイトで使ってるcmsはこれです。</p>
         </li>
       </div>
       <h3>I'm studying now</h3>
 
+              {/* Amazon Web Services (AWS) */}
+              <li className="skill-item">
+          <img src={Awsimage} alt='' />
+          <p>講座は受けたことありますが、実用には至らず。</p>
+        </li>
+
       {/*python */}
       <li className="skill-item">
           <img src={PythonImage} alt="" />
-          <p>11月に入ってから機械学習に興味をもち学習を始めた。最近はpandasやseabornについて触れている。</p>
-        </li>
-
-        {/*PHP */}
-        <li className="skill-item">
-          <img src={PHPImage} alt="" />
-          <p>この言語はwordpressで開発を進めるのにあたって触る事になった。udemyで講座受けている。</p>
+          <p>機械学習に興味をもち学習を始めた。最近はpandasやseabornについて触れている。</p>
         </li>
 
         {/*Nuxt.js */}
@@ -137,7 +130,7 @@ function Skills() {
         {/*linux */}
         <li className="skill-item">
           <img src={LinuxImage} alt="" />
-          <p>11月の中頃からパソコンの中に入れてみたもの、linucを取るために奮闘中</p>
+          <p>macの中に仮想環境としてubuntuを構築しました、まだ理解していません。</p>
         </li>
         
     </section>

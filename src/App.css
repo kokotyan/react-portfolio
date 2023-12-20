@@ -1,3 +1,7 @@
+body {
+  margin-bottom: 2rem;
+}
+
 /* ヘッダー */
 .App {
   width: 100%;
@@ -205,9 +209,6 @@ nav ul li a:hover {
 }
 
 /* メニュートグルアイコンのスタイル */
-
-/*ヘッダー*/
-
 .content img {
   width: 100%;
   max-width: 100%;
@@ -295,7 +296,7 @@ figure img {
 /*hobby,works*/
 
 .carousel .slide img {
-  max-width:75%; 
+  max-width:60%; 
   height: auto;
 }
 
@@ -308,8 +309,8 @@ figure img {
 }
 
 .carousel .carousel-slider {
-  max-width: 50%; /* クリックで画像が切り替わる部分の最大幅を設定 */
-  margin: 0 auto; /* 中央に配置 */
+  max-width: 50%;
+  margin: 0 auto;
 }
 
 /* 以下、その他のスタイルルールは変更しないでください */
@@ -388,6 +389,9 @@ figure img {
   text-align: center;
   width: 100%;
   left: 0; 
+  position: fixed;
+  bottom: 0;
+  z-index: 1000;
 }
 
 .content {
@@ -443,9 +447,19 @@ figure img {
   color: #55acee;
 }
 
+@media (min-width: 769px) {
+  body {
+    margin-bottom: 0;
+  }
+
+  #footer {
+    position: relative;
+  }
+}
+
 @media (max-width: 768px) {
   .footer .wrapper {
-    padding: 0 20px; /* スマートフォン用に内側のパディングを追加 */
+    padding: 0 20px;
   }
 
   .sns a {
