@@ -25,8 +25,8 @@
     "rm": "rm -rf docs",
     "mv": "mv build docs",
     "predeploy": "npm run build",
-    "git": "git add . && git commit && git push origin main",
-    "deploy": "main -d build"
+    "git": "git add . && git commit && git push origin gh-pages",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
