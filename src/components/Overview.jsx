@@ -1,8 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import myroomImage from './img/6670F46F-3567-422C-BE4A-3A8FD8949C7A_1_105_c.jpeg';
-import zidoriImage from './img/zidori.jpg'; 
+import zidoriImage from './img/zidori.jpg';
 
 function MyComponent() {
+  useEffect(() => {
+    const overviewSection = document.getElementById('overview');
+    if (overviewSection) {
+      overviewSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, []);
+
   return (
     <main id="overview">
       <div className="list-menu">
