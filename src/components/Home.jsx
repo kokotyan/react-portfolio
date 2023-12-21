@@ -1,15 +1,8 @@
-import React, { useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import React from 'react';
 import myroomImage from './img/myroom.jpeg';
 import zidoriImage from './img/zidori.jpg';
 
 function MyComponent() {
-  const navigate = useNavigate();
-
-  useEffect(() => {
-    navigate('/react-portfolio/Home');
-  }, [navigate]);
-
   return (
     <main id="Home">
       <div className="list-menu">
