@@ -1,17 +1,17 @@
 import React, { useEffect } from 'react';
-import myroomImage from './img/6670F46F-3567-422C-BE4A-3A8FD8949C7A_1_105_c.jpeg';
+import { useNavigate } from 'react-router-dom';
+import myroomImage from './img/myroom.jpeg';
 import zidoriImage from './img/zidori.jpg';
 
 function MyComponent() {
+  const navigate = useNavigate();
+
   useEffect(() => {
-    const overviewSection = document.getElementById('overview');
-    if (overviewSection) {
-      overviewSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  }, []);
+    navigate('/react-portfolio/Home');
+  }, [navigate]);
 
   return (
-    <main id="overview">
+    <main id="Home">
       <div className="list-menu">
         <div className="content">
           <img src={myroomImage} alt='' />
