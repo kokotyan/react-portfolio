@@ -2,7 +2,8 @@ import React from 'react';
 class NewsSection extends React.Component {
   render() {
     const newsItems = [
-      { date:  '2023/12/25',content: 'このサイトを開いたときに何も表示されない不具合を対処しました'},
+      { date: '2023/12/27', content: 'いらないコードを削減しました'},
+      { date: '2023/12/25', content: 'このサイトを開いたときに何も表示されない不具合を対処しました'},
       { date: '2023/12/21', content: 'worksとskill、それとヘッダーとフッターの変更を加えました'},
       { date: '2023/11/27', content: 'overviewのテキストの位置がいまいちだったので位置を変更しました'},
       { date: '2023/11/18', content: '扱えるようになった言語を追加し、works欄にvue.jsの作ったものを貼りつけました'},
