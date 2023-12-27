@@ -3,8 +3,6 @@ import Htmlimage from './img/html-5.svg';
 import CssImage from './img/css-3.svg';
 import JqeryImage from'./img/jquery.svg';
 import ReactImage from './img/react.svg';
-import IllustratorImage from './img/adobe-illustrator.svg';
-import photoshopImage from './img/adobe-photoshop.svg';
 import WindowsImage from './img/microsoft-windows-icon.svg';
 import AppleImage from './img/apple.svg';
 import SlackImage from './img/slack-icon.svg';
@@ -44,31 +42,13 @@ function Skills() {
         {/* React */}
         <li className="skill-item">
           <img src={ReactImage} alt='' />
-          <p>現在のポートフォリオはこれで作られています。</p>
-        </li>
-
-        {/*node.js*/}
-        <li className="skill-item">
-          <img src={NodeImage} alt="" />
-          <p>progateを修了する程度には出来ます。</p>
+          <p>このポートフォリオはこれで作られています、私の得意言語です。</p>
         </li>
 
         {/*vue.js */}
         <li className="skill-item">
           <img src={VueImage} alt="" />
           <p>簡単なメモ帳アプリが作れます。</p>
-        </li>
-
-        {/* Adobe Illustrator */}
-        <li className="skill-item">
-          <img src={IllustratorImage} alt='' />
-          <p>簡単なイラストなら描けます。</p>
-        </li>
-
-        {/* Adobe Photoshop */}
-        <li className="skill-item">
-          <img src={photoshopImage} alt='' />
-          <p>軽い画像加工なら出来ます。</p>
         </li>
 
         {/* Game Development on Microsoft Windows */}
@@ -102,6 +82,12 @@ function Skills() {
         </li>
       </div>
       <h3>I'm studying now</h3>
+
+              {/*node.js*/}
+              <li className="skill-item">
+          <img src={NodeImage} alt="" />
+          <p>progateを修了する程度には出来ます。</p>
+        </li>
 
               {/* Amazon Web Services (AWS) */}
               <li className="skill-item">
