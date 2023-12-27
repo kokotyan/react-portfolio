@@ -1,6 +1,7 @@
 {
   "name": "react-portfolio",
   "version": "1.0.0",
+  "homepage": "https://kokotyan.github.io/react-portfolio",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.2",
@@ -9,12 +10,10 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "jquery": "^3.6.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.16.0",
-    "slick-carousel": "^1.8.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -26,7 +25,7 @@
     "mv": "mv build docs",
     "predeploy": "npm run build",
     "git": "git add . && git commit && git push origin gh-pages",
-    "deploy": "gh-pages -d root"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -50,6 +49,5 @@
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "gh-pages": "^6.1.0",
     "react-scripts": "^5.0.1"
-  },
-  "homepage": "https://kokotyan.github.io/react-portfolio"
+  }
 }
