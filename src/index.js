@@ -12,39 +12,10 @@ root.render(
   </React.StrictMode>
 );
 
-function MainApp() { 
+function MainApp() {
   useEffect(() => {
-    // Google Analyticsのトラッキングコード
-    const script1 = document.createElement('script');
-    script1.async = true;
-    script1.src = 'https://www.googletagmanager.com/gtag/js?id=G-TPVYM8M09C';
-
-    script1.onload = () => {
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        window.dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
-      gtag('config', 'G-TPVYM8M09C');
-    };
-
-    document.head.appendChild(script1);
-
-    const script2 = document.createElement('script');
-    script2.async = true;
-    script2.src = `https://www.googletagmanager.com/gtag/js?id=YOUR_GA_MEASUREMENT_ID`;
-
-    script2.onload = () => {
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        window.dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
-      gtag('config', 'YOUR_GA_MEASUREMENT_ID');
-    };
-
-    document.head.appendChild(script2);
-  }, []);
+    // ここに useEffect の中で行いたい処理を書く
+  }, []); // 第二引数は useEffect が依存する値のリストです。空のリストは初回レンダリング時のみ実行することを意味します
 
   return (
     <Router>
@@ -53,4 +24,4 @@ function MainApp() {
   );
 }
 
-export default MainApp; 
+export default MainApp;
