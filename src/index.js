@@ -1,18 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
-import React, { useEffect } from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
+import App from './App'; 
 
+import { BrowserRouter as Router } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <App /> {/* ここで名前を変更した部分を反映 */}
   </React.StrictMode>
 );
-function App() {
+
+function MainApp() { 
   useEffect(() => {
     // Google Analyticsのトラッキングコード
     const script1 = document.createElement('script');
@@ -53,4 +53,4 @@ function App() {
   );
 }
 
-export default App;
+export default MainApp; 
