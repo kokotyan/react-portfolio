@@ -12,7 +12,7 @@ function MyComponent() {
         <h2>overview</h2>
         <div className="section">
           <figure>
-            <img src={zidoriImage} alt=''/> 
+            <img src={zidoriImage} alt=''/>
             <figcaption>2001/02/07 石川県珠洲市にて産声をあげた</figcaption>
           </figure>
           <div className='text'>

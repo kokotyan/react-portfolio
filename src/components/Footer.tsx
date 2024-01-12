@@ -2,7 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons';
 
-const Footer = () => {
+const Footer: React.FC = () => {
   return (
     <footer id="footer" className="footer">
       <div className="wrapper">

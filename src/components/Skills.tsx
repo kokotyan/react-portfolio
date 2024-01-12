@@ -46,7 +46,13 @@ function Skills() {
           <p>現在のポートフォリオはこれで作られています。</p>
         </li>
 
-        {/*vue.js */}
+        {/* TypeScript */}
+        <li className="skill-item">
+          <img src={TsImage} alt="" />
+          <p>このサイトの大半はこれ、最近jsxからtsxに変えました</p>
+        </li>
+
+        {/* vue.js */}
         <li className="skill-item">
           <img src={VueImage} alt="" />
           <p>簡単なメモ帳アプリが作れます。</p>
@@ -84,16 +90,16 @@ function Skills() {
       </div>
       <h3>I'm studying now</h3>
 
-      {/*PHP*/}
+      {/* PHP */}
       <li className="skill-item">
         <img src={PHPImage} alt="" />
         <p>お問い合わせフォームを作る程度にはできます。</p>
       </li>
 
-      {/*node.js*/}
+      {/* node.js */}
       <li className="skill-item">
         <img src={NodeImage} alt="" />
-        <p>progateを修了する程度には出来ます。</p>
+        <p>progateを修了する程度にはできます。</p>
       </li>
 
       {/* Amazon Web Services (AWS) */}
@@ -102,37 +108,26 @@ function Skills() {
         <p>講座は受けたことありますが、実用には至らず。</p>
       </li>
 
-      {/*python */}
-      <li className="skill-item">
-        <img src={PythonImage} alt="" />
-        <p>
-          機械学習に興味をもち学習を始めた。最近はpandasやseabornについて触れている。
-        </p>
-      </li>
+        {/* python */}
+        <li className="skill-item">
+          <img src={PythonImage} alt="" />
+          <p>機械学習に興味をもち学習を始めた。最近はpandasやseabornについて触れている。</p>
+        </li>
 
-      {/*Nuxt.js */}
-      <li className="skill-item">
-        <img src={NuxtImage} alt="" />
-        <p>
-          モダンな開発がしたいと思ってkindleで書籍を買ってぼちぼち学んでいる。
-        </p>
-      </li>
+        {/* Nuxt.js */}
+        <li className="skill-item">
+          <img src={NuxtImage} alt="" />
+          <p>モダンな開発がしたいと思ってkindleで書籍を買ってぼちぼち学んでいる。</p>
+        </li>
 
-      {/*typescript */}
-      <li className="skill-item">
-        <img src={TsImage} alt="" />
-        <p>これもモダンな開発に必要だと感じkindleで書籍を買い学習中。</p>
-      </li>
-
-      {/*linux */}
-      <li className="skill-item">
-        <img src={LinuxImage} alt="" />
-        <p>
-          macの中に仮想環境としてubuntuを構築しました、まだ理解していません。
-        </p>
-      </li>
-    </section>
-  );
+        {/* linux */}
+        <li className="skill-item">
+          <img src={LinuxImage} alt="" />
+          <p>macの中に仮想環境としてubuntuを構築しました、まだ理解していません。</p>
+        </li>
+      </section>
+    );
 }
 
 export default Skills;
+

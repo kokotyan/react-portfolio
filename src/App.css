@@ -388,11 +388,9 @@ figure img {
   padding: 10px 0;
   text-align: center;
   width: 100%;
-  left: 0; 
-  position: fixed;
-  bottom: 0;
   z-index: 1000;
 }
+
 
 .content {
   margin-bottom: 120px; 

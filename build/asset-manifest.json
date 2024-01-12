@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.bb36d9da.css",
-    "main.js": "/react-portfolio/static/js/main.3451bee9.js",
+    "main.css": "/react-portfolio/static/css/main.32572fe0.css",
+    "main.js": "/react-portfolio/static/js/main.a6f58873.js",
     "static/media/portfolio1.png": "/react-portfolio/static/media/portfolio1.06045a6c59b7a16259bc.png",
     "static/media/game.jpg": "/react-portfolio/static/media/game.2eeab5dad6d8dbfb7e6c.jpg",
     "static/media/photo.jpg": "/react-portfolio/static/media/photo.045762729c17577879ba.jpg",
@@ -22,11 +22,11 @@
     "static/media/apple.svg": "/react-portfolio/static/media/apple.348e84b8ff07c917032f435ba576a0fe.svg",
     "index.html": "/react-portfolio/index.html",
     "static/media/microsoft-windows-icon.svg": "/react-portfolio/static/media/microsoft-windows-icon.06efb80220b9070bd23e1a1e36560849.svg",
-    "main.bb36d9da.css.map": "/react-portfolio/static/css/main.bb36d9da.css.map",
-    "main.3451bee9.js.map": "/react-portfolio/static/js/main.3451bee9.js.map"
+    "main.32572fe0.css.map": "/react-portfolio/static/css/main.32572fe0.css.map",
+    "main.a6f58873.js.map": "/react-portfolio/static/js/main.a6f58873.js.map"
   },
   "entrypoints": [
-    "static/css/main.bb36d9da.css",
-    "static/js/main.3451bee9.js"
+    "static/css/main.32572fe0.css",
+    "static/js/main.a6f58873.js"
   ]
 }

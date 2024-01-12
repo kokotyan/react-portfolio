@@ -5,7 +5,7 @@ import GadgetImage from './img/gadgetpt2.jpeg';
 import GameImage from './img/game.jpg';
 import SoraImage from './img/photo.jpg';
 
-const SlideComponent = () => {
+const SlideComponent: React.FC = () => {
   return (
     <Carousel>
       <div>
@@ -22,6 +22,6 @@ const SlideComponent = () => {
       </div>
     </Carousel>
   );
-}
+};
 
 export default SlideComponent;

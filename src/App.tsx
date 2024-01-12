@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import { HashRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Header from "./components/Header";
@@ -9,7 +9,8 @@ import Hobby from "./components/Hobby";
 import News from "./components/News";
 import Footer from "./components/Footer";
 
-function App() {
+
+const App: React.FC = () => {
   return (
     <HashRouter>
       <div className="App">
