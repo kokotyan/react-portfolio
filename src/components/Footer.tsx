@@ -6,7 +6,7 @@ const Footer: React.FC = () => {
   return (
     <footer id="footer" className="footer">
       <div className="wrapper">
-        <p>© 2023 koko's Portfolio</p>
+        <p>© 2024 koko's Portfolio</p>
       </div>
       <div className="sns">
         <a href="https://twitter.com/murakumo_yu">

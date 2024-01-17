@@ -4,6 +4,7 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import GadgetImage from './img/gadgetpt2.jpeg';
 import GameImage from './img/game.jpg';
 import SoraImage from './img/photo.jpg';
+import AmzImage from './img/amazarashi.jpeg'
 
 const SlideComponent: React.FC = () => {
   return (
@@ -14,11 +15,15 @@ const SlideComponent: React.FC = () => {
       </div>
       <div>
         <img src={GameImage} alt="ゲーム画像" />
-        <p>最近やっているのかドラクエXとAC6</p>
+        <p>最近やっているのはドラクエXとスト6です</p>
       </div>
       <div>
         <img src={SoraImage} alt="空の画像" />
         <p>外で写真を撮るのが好きです</p>
+      </div>
+      <div>
+        <img src={AmzImage} alt="音楽" />
+        <p>実はamazarashiがたまらなく好きです</p>
       </div>
     </Carousel>
   );
