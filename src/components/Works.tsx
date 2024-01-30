@@ -2,7 +2,7 @@ import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import AkumuImage from './img/akumu.png';
-import VueImage from './img/Vue2.png';
+import VueImage from './img/vue.svg';
 import PortfolioImage from './img/portfolio1.png';
 import BlogImage from './img/blog.png';
 

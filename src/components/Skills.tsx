@@ -1,133 +1,60 @@
 import React from "react";
-import Htmlimage from "./img/html-5.svg";
-import CssImage from "./img/css-3.svg";
-import JqeryImage from "./img/jquery.svg";
-import ReactImage from "./img/react.svg";
-import PHPImage from "./img/PHP.png";
-import WindowsImage from "./img/microsoft-windows-icon.svg";
-import AppleImage from "./img/apple.svg";
-import SlackImage from "./img/slack-icon.svg";
-import GithubImage from "./img/github-icon.svg";
-import Awsimage from "./img/aws.svg";
-import WordpressImage from "./img/wordpress-icon-alt.svg";
-import NodeImage from "./img/node-js-icon-454x512-nztofx17.png";
-import VueImage from "./img/Vue2.png";
-import PythonImage from "./img/python.png";
-import NuxtImage from "./img/nuxt.png";
-import TsImage from "./img/ts.png";
-import LinuxImage from "./img/ubuntu.png";
 
-function Skills() {
-  return (
-    <section id="skills">
-      <h2>Skills</h2>
-      <div className="container">
-        {/* HTML */}
-        <li className="skill-item">
-          <img src={Htmlimage} alt="" />
-          <p>基本的には不自由なく使いこなせています。</p>
-        </li>
-
-        {/* CSS */}
-        <li className="skill-item">
-          <img src={CssImage} alt="" />
-          <p>レスポンシブなサイトが作れます。</p>
-        </li>
-
-        {/* jQuery */}
-        <li className="skill-item">
-          <img src={JqeryImage} alt="" />
-          <p>slickなどを使ってver1のポートフォリオを作りました。</p>
-        </li>
-
-        {/* React */}
-        <li className="skill-item">
-          <img src={ReactImage} alt="" />
-          <p>現在のポートフォリオはこれで作られています。</p>
-        </li>
-
-        {/* TypeScript */}
-        <li className="skill-item">
-          <img src={TsImage} alt="" />
-          <p>このサイトの大半はこれ、最近jsxからtsxに変えました</p>
-        </li>
-
-        {/* vue.js */}
-        <li className="skill-item">
-          <img src={VueImage} alt="" />
-          <p>簡単なメモ帳アプリが作れます。</p>
-        </li>
-
-        {/* Game Development on Microsoft Windows */}
-        <li className="skill-item">
-          <img src={WindowsImage} alt="" />
-          <p>自作PC組めます、win11のbeta版を使ってます</p>
-        </li>
-
-        {/* Apple Beta Version */}
-        <li className="skill-item">
-          <img src={AppleImage} alt="" />
-          <p>基本macで作業してます、ちなみにbeta版使ってます。</p>
-        </li>
-
-        {/* Slack */}
-        <li className="skill-item">
-          <img src={SlackImage} alt="" />
-          <p>基本業務連絡はslack、botは作ったことはありません。</p>
-        </li>
-
-        {/* GitHub */}
-        <li className="skill-item">
-          <img src={GithubImage} alt="" />
-          <p>コードの管理はgitでやってます。</p>
-        </li>
-
-        {/* WordPress */}
-        <li className="skill-item">
-          <img src={WordpressImage} alt="" />
-          <p>ブログ運営したりバイトで使ってるcmsはこれです。</p>
-        </li>
-      </div>
-      <h3>I'm studying now</h3>
-
-      {/* PHP */}
-      <li className="skill-item">
-        <img src={PHPImage} alt="" />
-        <p>お問い合わせフォームを作る程度にはできます。</p>
-      </li>
-
-      {/* node.js */}
-      <li className="skill-item">
-        <img src={NodeImage} alt="" />
-        <p>progateを修了する程度にはできます。</p>
-      </li>
-
-      {/* Amazon Web Services (AWS) */}
-      <li className="skill-item">
-        <img src={Awsimage} alt="" />
-        <p>講座は受けたことありますが、実用には至らず。</p>
-      </li>
-
-        {/* python */}
-        <li className="skill-item">
-          <img src={PythonImage} alt="" />
-          <p>機械学習に興味をもち学習を始めた。最近はpandasやseabornについて触れている。</p>
-        </li>
-
-        {/* Nuxt.js */}
-        <li className="skill-item">
-          <img src={NuxtImage} alt="" />
-          <p>モダンな開発がしたいと思ってkindleで書籍を買ってぼちぼち学んでいる。</p>
-        </li>
-
-        {/* linux */}
-        <li className="skill-item">
-          <img src={LinuxImage} alt="" />
-          <p>macの中に仮想環境としてubuntuを構築しました、まだ理解していません。</p>
-        </li>
-      </section>
-    );
+// スキルのデータの型定義
+interface Skill {
+  src: string;
+  alt: string;
+  description: string;
 }
 
-export default Skills;
+// スキルのデータ
+const skillsData: Skill[] = [
+  { src: require("./img/html-5.svg").default, alt: "HTML", description: "基本的には不自由なく使いこなせています。" },
+  { src: require("./img/css-3.svg").default, alt: "CSS", description: "レスポンシブなサイトが作れます。" },
+  { src: require("./img/jquery.svg").default, alt: "jQuery", description: "slickなどを使ってver1のポートフォリオを作りました。" },
+  { src: require("./img/react.svg").default, alt: "React", description: "現在のポートフォリオはこれで作られています。" },
+  { src: require("./img/ts.svg").default, alt: "TypeScript", description: "このサイトの大半はこれ、最近jsxからtsxに変えました。" },
+  { src: require("./img/vue.svg").default, alt: "Vue.js", description: "簡単なメモ帳アプリが作れます。" },
+  { src: require("./img/vscode.svg").default,alt: "vscode",description: "大体コーディングはこれでしてます。"},
+  { src: require("./img/windows.svg").default, alt: "Game Development on Microsoft Windows", description: "自作PC組めます、win11のbeta版を使ってます。" },
+  { src: require("./img/apple.svg").default, alt: "Apple Beta Version", description: "基本macで作業してます、ちなみにbeta版使ってます。" },
+  { src: require("./img/slack.svg").default, alt: "Slack", description: "基本業務連絡はslack、botは作ったことはありません。" },
+  { src: require("./img/github.svg").default, alt: "GitHub", description: "コードの管理はgitでやってます。" },
+  { src: require("./img/wordpress.svg").default, alt: "WordPress", description: "ブログ運営したりバイトで使ってるcmsはこれです。" },
+];
 
+// SkillItemコンポーネント
+const SkillItem: React.FC<Skill> = ({ src, alt, description }) => (
+  <li className="skill-item">
+    <img src={src} alt={alt} />
+    <p>{description}</p>
+  </li>
+);
+
+// Skillsコンポーネント
+const Skills: React.FC = () => (
+  <section id="skills">
+    <h2>Skills</h2>
+    <div className="container">
+      {skillsData.map((skill, index) => (
+        <SkillItem key={index} {...skill} />
+      ))}
+    </div>
+    
+    <h3>I'm studying now</h3>
+    <div className="container">
+      {/* 以下の部分をループで動的に生成 */}
+      {[
+        { src: require("./img/nodejs.svg").default, alt: "node.js", description: "progateを修了する程度には使えます" },
+        { src: require("./img/php.svg").default, alt: "PHP", description: "お問い合わせフォームを作る程度にはできます。" },
+        { src: require("./img/python.svg").default, alt: "Python", description: "機械学習に興味をもち学習を始めた。最近はpandasやseabornについて触れている。" },
+        { src: require("./img/nuxt.svg").default, alt: "Nuxt.js", description: "モダンな開発がしたいと思ってkindleで書籍を買ってぼちぼち学んでいる。" },
+        { src: require("./img/ubuntu.svg").default, alt: "Linux", description: "macの中に仮想環境としてubuntuを構築しました、まだ理解していません。" },
+      ].map((skill, index) => (
+        <SkillItem key={index} {...skill} />
+      ))}
+    </div>
+  </section>
+);
+
+export default Skills;
