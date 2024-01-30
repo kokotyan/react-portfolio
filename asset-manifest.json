@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.32572fe0.css",
-    "main.js": "/react-portfolio/static/js/main.bba40df3.js",
+    "main.js": "/react-portfolio/static/js/main.19af85cf.js",
     "static/media/portfolio1.png": "/react-portfolio/static/media/portfolio1.06045a6c59b7a16259bc.png",
     "static/media/game.jpg": "/react-portfolio/static/media/game.2eeab5dad6d8dbfb7e6c.jpg",
     "static/media/photo.jpg": "/react-portfolio/static/media/photo.045762729c17577879ba.jpg",
@@ -11,23 +11,29 @@
     "static/media/myroom.jpeg": "/react-portfolio/static/media/myroom.95c68dcdfc8e98451efc.jpeg",
     "static/media/akumu.png": "/react-portfolio/static/media/akumu.3b961f7d64834c423a4a.png",
     "static/media/zidori.jpg": "/react-portfolio/static/media/zidori.331d277efd5197ad1059.jpg",
-    "static/media/node-js-icon-454x512-nztofx17.png": "/react-portfolio/static/media/node-js-icon-454x512-nztofx17.9fea1c7da2bd42ab93bf.png",
-    "static/media/aws.svg": "/react-portfolio/static/media/aws.b6e95e0a7891cbff4f1144c7a4d7bb80.svg",
     "static/media/react.svg": "/react-portfolio/static/media/react.e27571eaed899c642345e71163624ef9.svg",
     "static/media/jquery.svg": "/react-portfolio/static/media/jquery.805a7ce8514466ad45ded05a3c611009.svg",
-    "static/media/github-icon.svg": "/react-portfolio/static/media/github-icon.04ed74f38b41cdcbf14f80ae8cd0aa2b.svg",
+    "static/media/vscode.svg": "/react-portfolio/static/media/vscode.f57bbf46dad2409e508cb50781867a39.svg",
+    "static/media/github.svg": "/react-portfolio/static/media/github.04ed74f38b41cdcbf14f80ae8cd0aa2b.svg",
+    "static/media/nodejs.svg": "/react-portfolio/static/media/nodejs.3dc364b8e9beb3561620274aea4f0844.svg",
+    "static/media/ubuntu.svg": "/react-portfolio/static/media/ubuntu.27cdf77dc2ac19d8c27333363c15d342.svg",
+    "static/media/php.svg": "/react-portfolio/static/media/php.8c49448ba31fd23639c1b1d37d18bc99.svg",
+    "static/media/python.svg": "/react-portfolio/static/media/python.6a8b2999db46fb931134216e8fdfdb2c.svg",
     "static/media/html-5.svg": "/react-portfolio/static/media/html-5.e7638e3676622c76a46ece6c46136fd4.svg",
-    "static/media/slack-icon.svg": "/react-portfolio/static/media/slack-icon.9273514db511850f979d3223e5215fc2.svg",
+    "static/media/slack.svg": "/react-portfolio/static/media/slack.9273514db511850f979d3223e5215fc2.svg",
+    "static/media/ts.svg": "/react-portfolio/static/media/ts.ff34a1b08013556934e1cc0cf67c5baa.svg",
     "static/media/css-3.svg": "/react-portfolio/static/media/css-3.e7a9de36d9335d92932e93eb3b32deb9.svg",
-    "static/media/wordpress-icon-alt.svg": "/react-portfolio/static/media/wordpress-icon-alt.43b14e5ade4a54befb8b10dd905b2fcd.svg",
+    "static/media/wordpress.svg": "/react-portfolio/static/media/wordpress.43b14e5ade4a54befb8b10dd905b2fcd.svg",
+    "static/media/nuxt.svg": "/react-portfolio/static/media/nuxt.0283f03a43e69d72af9f7e47c859a907.svg",
     "static/media/apple.svg": "/react-portfolio/static/media/apple.348e84b8ff07c917032f435ba576a0fe.svg",
     "index.html": "/react-portfolio/index.html",
-    "static/media/microsoft-windows-icon.svg": "/react-portfolio/static/media/microsoft-windows-icon.06efb80220b9070bd23e1a1e36560849.svg",
+    "static/media/windows.svg": "/react-portfolio/static/media/windows.06efb80220b9070bd23e1a1e36560849.svg",
+    "static/media/vue.svg": "/react-portfolio/static/media/vue.c286d2da48ffbf281f407b0c4c94271f.svg",
     "main.32572fe0.css.map": "/react-portfolio/static/css/main.32572fe0.css.map",
-    "main.bba40df3.js.map": "/react-portfolio/static/js/main.bba40df3.js.map"
+    "main.19af85cf.js.map": "/react-portfolio/static/js/main.19af85cf.js.map"
   },
   "entrypoints": [
     "static/css/main.32572fe0.css",
-    "static/js/main.bba40df3.js"
+    "static/js/main.19af85cf.js"
   ]
 }
