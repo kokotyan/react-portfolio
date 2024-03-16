@@ -28,13 +28,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-
-        - name: Set up SSH agent
-      run: |
-        eval $(ssh-agent -s)
-        ssh-add $HOME/.ssh/github
+      - name: Set up SSH agent
+        run: |
+          eval $(ssh-agent -s)
+          ssh-add $HOME/.ssh/github
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
