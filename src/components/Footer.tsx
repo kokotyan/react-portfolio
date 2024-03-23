@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faTwitter, faGithub, faWordpress } from '@fortawesome/free-brands-svg-icons';
 
 const Footer: React.FC = () => {
   return (
@@ -14,6 +14,9 @@ const Footer: React.FC = () => {
         </a>
         <a href="https://github.com/kokotyan">
           <FontAwesomeIcon icon={faGithub} />
+        </a>
+        <a href="https://hagf.buzz">
+          <FontAwesomeIcon icon={faWordpress} />
         </a>
       </div>
     </footer>
