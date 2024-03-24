@@ -1,6 +1,6 @@
 import React from 'react';
 import { HashRouter, Route, Routes } from "react-router-dom";
-import "./App.css";
+import './index.css';
 import Header from "./components/Header";
 import MyComponent from "./components/Home"; 
 import Skills from "./components/Skills";
