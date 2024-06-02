@@ -16,8 +16,8 @@ function MyComponent() {
             <figcaption>2001/02/07 石川県珠洲市にて産声をあげた</figcaption>
           </figure>
           <div className='text'>
-            <p>金沢出身。</p>
-            <p>現場でバイトをしているエンジニアの卵</p>
+            <p>加賀百万石、金沢育ちです。</p>
+            <p>フロントエンドエンジニアを目指す者</p>
             <p>空と音楽、それと美味しいものが好き</p>
           </div>
         </div>

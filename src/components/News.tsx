@@ -17,6 +17,7 @@ class NewsSection extends React.Component {
 
   render() {
     const newsItems: NewsItem[] = [
+      { date: '2024/06/02', content: '職業が変わったので変更したのと、スキル欄の説明を少し訂正しました'},
       { date: '2024/01/17', content: '実はamazarashiが好きなのでhobbyのところに追加してみました'},
       { date: '2024/01/12', content: 'このサイトのコンポーネントから何から何までをtypescriptに対応させました' },
       { date: '2024/01/05', content: 'googleアナリティクスを導入しました' },
