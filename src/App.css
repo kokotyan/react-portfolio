@@ -1,5 +1,11 @@
 body {
   margin-bottom: 2rem;
+  background-color:#d2b48c;
+}
+
+/* 共通のフォント設定 */
+body, h2, h3, p, figcaption, .footer-text, .slide-text {
+  font-family: 'Arial', sans-serif; /* 使用しているフォントファミリーに合わせて変更してください */
 }
 
 /* ヘッダー */
@@ -14,7 +20,8 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #add8e6;
+  /* background-color: #add8e6; */
+  background-color:#CCD9C1;
   color: white;
   width: 100%;
   z-index: 10;
@@ -79,7 +86,7 @@ nav ul li a:hover {
   }
 
   nav ul li a:hover {
-    color: #007bff;
+    color: #d2b48c;
   }
 }
 
@@ -117,6 +124,16 @@ nav ul li a:hover {
   transform: translateY(-8px) rotate(-45deg);
 }
 
+/* Homeセクションのスタイル */
+#Home h2, #Home p, #Home figcaption {
+  color: #6a4e37; /* テキストの色 */
+}
+
+#Home .text {
+  text-align: center;
+  color: #6a4e37; /* テキストの色 */
+}
+
 /* メニュー */
 .main-menu {
   position: fixed; /* メニューを固定位置にする */
@@ -124,7 +141,7 @@ nav ul li a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #add8e6; /* メニューの背景色を設定 */
+  background-color: #CCD9C1; /* メニューの背景色を設定 */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -153,16 +170,16 @@ nav ul li a:hover {
   font-size: 24px; /* メニューの文字サイズを調整 */
   padding: 10px 20px; /* メニュー項目の余白を調整 */
   border-radius: 5px; /* メニュー項目に角丸を追加 */
-  background-color:skyblue; /* メニュー項目の背景色を設定 */
+  background-color: #d2b48c; /* メニュー項目の背景色を設定 */
   transition: background-color 0.3s ease;
 }
 
 .main-menu ul li a:hover {
-  background-color: #0056b3; /* メニュー項目のホバー時の背景色を変更 */
+  background-color: #d2b48c; /* メニュー項目のホバー時の背景色を変更 */
 }
 
 .main-menu.open {
-  background-color: white;
+  background-color: #CCD9C1;
   transform: translateX(0);
 }
 
@@ -244,56 +261,71 @@ figure img {
 /* スキルセクションのスタイル */
 
 #skills {
-  padding: 2rem;
+  text-align: center;
   margin: 50px auto;
   max-width: 800px;
-  text-align: center;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5dc; /* ベージュの背景色 */
+  border-radius: 10px; /* 角を少し丸くする */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 影を追加して浮いている感じに */
+  position: relative;
+  overflow: hidden;
 }
 
-/* スキルアイテムのスタイル */
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.skill-item {
-  flex: calc(50% - 10px);
-  padding: 10px;
+#skills h2 {
+  font-size: 2.5rem;
   margin-bottom: 20px;
-  border: 1px solid #ccc;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  box-sizing: border-box;
-  width: 100%;
+  letter-spacing: 0.1em;
+  color: #6a4e37; /* タイトルの色 */
 }
 
-.skill-item img {
-  height: auto;
-  width: 80px;
-  max-width: 100%;
-  max-height: 80px;
+.menu-category {
+  margin-bottom: 30px;
+}
+
+.menu-category h3 {
+  font-size: 2rem;
   margin-bottom: 10px;
+  border-bottom: 1px solid #333;
+  display: inline-block;
+  padding-bottom: 5px;
+  color: #6a4e37; /* サブタイトルの色 */
 }
 
-/* スキルアイテムのテキストスタイル */
-.skill-item p {
-  font-size: 14px; /* 適切なフォントサイズに調整 */
-  line-height: 1.4; /* 行間を調整 */
+.menu-category ul {
+  list-style-type: none;
+  padding: 0;
   margin: 0;
 }
 
-/* メディアクエリ */
-@media (min-width: 600px) {
-  .skill-item {
-    flex: calc(50% - 20px);
-    margin: 10px;
-  }
+.menu-category ul li {
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+  color: #6a4e37; /* テキストの色 */
 }
 
+.price {
+  font-weight: bold;
+}
+
+.footer-text {
+  font-size: 1.5rem;
+  margin-top: 40px;
+  color: #6a4e37; /* フッターテキストの色 */
+}
+
+
 /*hobby,works*/
+
+.carousel .slide p {
+  font-size: 16px;
+  margin-top: 10px;
+  text-align: center;
+  color: #6a4e37; /* テキストの色 */
+}
 
 .carousel .slide img {
   max-width:60%; 
@@ -334,7 +366,8 @@ figure img {
   font-size: 16px;
   margin-top: 10px;
   text-align: center;
-  color: #333;
+  /* color: #333; */
+  color: #6a4e37;
 }
 
 /* Media Query for Smaller Screens */
@@ -357,33 +390,46 @@ figure img {
 
 #news {
   margin-top: 20px; 
+  text-align: center;
 }
 
 #news h2 {
   font-size: 24px; 
   margin-bottom: 10px; 
+  color: #6a4e37;
 }
 
 #news dl {
-  text-align: center;
   list-style-type: none; 
   padding: 0;
+  margin: 0 auto;
+  max-width: 100%;
 }
 
 #news dt {
-  text-align: center;
   font-weight: bold; 
   margin-top: 10px; 
+  text-align: center;
+  color: #6a4e37;
 }
 
 #news dd {
   margin-bottom: 20px;
+  text-align: left;
+  color: #6a4e37;
+}
+
+@media (max-width: 600px) {
+  #news dl {
+    max-width: 100%;
+  }
 }
 
 /*フッター*/
 
 #footer {
-  background-color: #add8e6;
+  /* background-color: #add8e6; */
+  background-color: #CCD9C1;
   color: #fff;
   padding: 10px 0;
   text-align: center;

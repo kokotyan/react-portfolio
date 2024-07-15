@@ -11,11 +11,11 @@ const SlideComponent: React.FC = () => {
     <Carousel>
       <div>
         <img src={GadgetImage} alt="ガジェット画像" />
-        <p>配信で使う機材や、ライフハックのために集めてます</p>
+        <p>機材を集めるのが好きです</p>
       </div>
       <div>
         <img src={GameImage} alt="ゲーム画像" />
-        <p>最近やっているのはドラクエXとスト6です</p>
+        <p>最近やっているタイトルはドラクエXとモンスターハンターIBです</p>
       </div>
       <div>
         <img src={SoraImage} alt="空の画像" />
@@ -23,7 +23,7 @@ const SlideComponent: React.FC = () => {
       </div>
       <div>
         <img src={AmzImage} alt="音楽" />
-        <p>実はamazarashiがたまらなく好きです</p>
+        <p>実はamazarashiというバンドが好きです</p>
       </div>
     </Carousel>
   );
